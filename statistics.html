@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+  <!--link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css", integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU=", crossorigin="anonymous")-->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <title>App statistics page</title>
+  <meta name="description" content="App statistics page description">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__container d-flex align-items-center">
+          <div class="col"><a class="logo" href="/"><img src="img/logo.png" alt="Liketo" width="112" height="41"></a></div>
+          <div class="col d-none d-sm-flex justify-content-center">
+            <div class="logo-customer"><span class="logo-customer__text">ATB Market</span></div>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="login">
+              <div class="login__container"><span class="login__avatar user-avatar">AO</span><button class="login__btn"><svg class="svg-sprite-icon icon-menu">
+                    <use xlink:href="img/sprite/symbol/sprite.svg#menu"></use>
+                  </svg></button><!-- .is-open class for open menu-->
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item menu__item--user-data">
+                      <ul class="user-data">
+                        <li class="user-data__avatar"><span class="user-avatar">AO</span></li>
+                        <li class="user-data__info"><span class="user-data__info-name">Абдул Обулов</span><span class="user-data__info-mail">abdulobdulov@mail.com</span></li>
+                      </ul>
+                    </li>
+                    <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="/"><svg class="svg-sprite-icon icon-statistics">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#statistics"></use>
+                        </svg>Статистика</a></li>
+                    <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="/"><svg class="svg-sprite-icon icon-rating">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#rating"></use>
+                        </svg>Рейтинг</a></li>
+                    <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="/"><svg class="svg-sprite-icon icon-polls">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#polls"></use>
+                        </svg>Опросы</a></li>
+                    <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="/"><svg class="svg-sprite-icon icon-devices">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#devices"></use>
+                        </svg>Устройства</a></li>
+                    <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="/"><svg class="svg-sprite-icon icon-reports">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#reports"></use>
+                        </svg>Отчёты</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--profile" href="/"><svg class="svg-sprite-icon icon-profile">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#profile"></use>
+                        </svg>Профиль</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--admin" href="/"><svg class="svg-sprite-icon icon-admin">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#admin"></use>
+                        </svg>Администрирование</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--logout" href="/"><svg class="svg-sprite-icon icon-logout">
+                          <use xlink:href="img/sprite/symbol/sprite.svg#logout"></use>
+                        </svg>Выйти</a></li>
+                  </ul>
+                  <div class="menu__backdrop"></div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page__main-content" role="main">
+        <div class="page-layout">
+          <div class="page-layout__container">
+            <div class="page-layout__row">
+              <div class="page-layout__aside d-none d-xl-flex">
+                <aside class="aside">
+                  <div class="aside__container">
+                    <nav class="main-nav">
+                      <ul class="main-nav__list">
+                        <li class="main-nav__item" data-toggle="tooltip" data-placement="right" title="Статистика"><a class="main-nav__link menu__link--statistics is-active" href="statistics.html"><svg class="svg-sprite-icon icon-statistics">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#statistics"></use>
+                            </svg></a></li>
+                        <li class="main-nav__item" data-toggle="tooltip" data-placement="right" title="Рейтинг"><a class="main-nav__link menu__link--rating" href="rating.html"><svg class="svg-sprite-icon icon-rating">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#rating"></use>
+                            </svg></a></li>
+                        <li class="main-nav__item" data-toggle="tooltip" data-placement="right" title="Опросы"><a class="main-nav__link menu__link--polls" href="polls.html"><svg class="svg-sprite-icon icon-polls">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#polls"></use>
+                            </svg></a></li>
+                        <li class="main-nav__item" data-toggle="tooltip" data-placement="right" title="Устройства"><a class="main-nav__link menu__link--devices" href="devices.html"><svg class="svg-sprite-icon icon-devices">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#devices"></use>
+                            </svg></a></li>
+                        <li class="main-nav__item" data-toggle="tooltip" data-placement="right" title="Отчёты"><a class="main-nav__link menu__link--reports" href="reports.html"><svg class="svg-sprite-icon icon-reports">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#reports"></use>
+                            </svg></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </aside>
+              </div>
+              <div class="page-layout__content">
+                <section class="content">
+                  <div class="content__container">
+                    <div class="content__header">
+                      <h1 class="content__title">Статистика</h1>
+                      <div class="content__header-options">
+                        <div class="content__header-datepicker">
+                          <div class="page-datepicker">
+                            <div class="react-datepicker-wrapper">
+                              <div class="react-datepicker__input-container"><input class="react-datepicker-ignore-onclickoutside" type="text" value="28 Января, 2020" /></div>
+                            </div>
+                            <div class="react-datepicker__tab-loop">
+                              <div class="react-datepicker__tab-loop__start" tabindex="0"></div>
+                              <div class="react-datepicker-popper" data-placement="bottom-start">
+                                <div>
+                                  <div class="react-datepicker">
+                                    <div class="react-datepicker__triangle" style="left: 91px;"></div><button class="react-datepicker__navigation react-datepicker__navigation--previous" type="button" aria-label="Previous Month">Previous Month</button><button class="react-datepicker__navigation react-datepicker__navigation--next" type="button" aria-label="Next Month">Next Month</button>
+                                    <div class="react-datepicker__month-container">
+                                      <div class="react-datepicker__header">
+                                        <div class="react-datepicker__current-month">Январь, 2020</div>
+                                        <div class="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"></div>
+                                        <div class="react-datepicker__day-names">
+                                          <div class="react-datepicker__day-name">Пн</div>
+                                          <div class="react-datepicker__day-name">Вт</div>
+                                          <div class="react-datepicker__day-name">Ср</div>
+                                          <div class="react-datepicker__day-name">Чт</div>
+                                          <div class="react-datepicker__day-name">Пт</div>
+                                          <div class="react-datepicker__day-name">Сб</div>
+                                          <div class="react-datepicker__day-name">Вс</div>
+                                        </div>
+                                      </div>
+                                      <div class="react-datepicker__month" aria-label="month  2014-02">
+                                        <div class="react-datepicker__week">
+                                          <div class="react-datepicker__day react-datepicker__day--026 react-datepicker__day--weekend react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Sunday, January 26th, 2014" role="button" aria-disabled="false">26</div>
+                                          <div class="react-datepicker__day react-datepicker__day--027 react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Monday, January 27th, 2014" role="button" aria-disabled="false">27</div>
+                                          <div class="react-datepicker__day react-datepicker__day--028 react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Tuesday, January 28th, 2014" role="button" aria-disabled="false">28</div>
+                                          <div class="react-datepicker__day react-datepicker__day--029 react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Wednesday, January 29th, 2014" role="button" aria-disabled="false">29</div>
+                                          <div class="react-datepicker__day react-datepicker__day--030 react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Thursday, January 30th, 2014" role="button" aria-disabled="false">30</div>
+                                          <div class="react-datepicker__day react-datepicker__day--031 react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Friday, January 31st, 2014" role="button" aria-disabled="false">31</div>
+                                          <div class="react-datepicker__day react-datepicker__day--001 react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Saturday, February 1st, 2014" role="button" aria-disabled="false">1</div>
+                                        </div>
+                                        <div class="react-datepicker__week">
+                                          <div class="react-datepicker__day react-datepicker__day--002 react-datepicker__day--weekend react-datepicker__day--selected react-datepicker__day--range-start react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Sunday, February 2nd, 2014" role="button" aria-disabled="false">2</div>
+                                          <div class="react-datepicker__day react-datepicker__day--003 react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Monday, February 3rd, 2014" role="button" aria-disabled="false">3</div>
+                                          <div class="react-datepicker__day react-datepicker__day--004 react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Tuesday, February 4th, 2014" role="button" aria-disabled="false">4</div>
+                                          <div class="react-datepicker__day react-datepicker__day--005 react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Wednesday, February 5th, 2014" role="button" aria-disabled="false">5</div>
+                                          <div class="react-datepicker__day react-datepicker__day--006 react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Thursday, February 6th, 2014" role="button" aria-disabled="false">6</div>
+                                          <div class="react-datepicker__day react-datepicker__day--007 react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Friday, February 7th, 2014" role="button" aria-disabled="false">7</div>
+                                          <div class="react-datepicker__day react-datepicker__day--008 react-datepicker__day--in-range react-datepicker__day--weekend" tabindex="0" aria-label="Choose Saturday, February 8th, 2014" role="button" aria-disabled="false">8</div>
+                                        </div>
+                                        <div class="react-datepicker__week">
+                                          <div class="react-datepicker__day react-datepicker__day--009 react-datepicker__day--in-range react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Sunday, February 9th, 2014" role="button" aria-disabled="false">9</div>
+                                          <div class="react-datepicker__day react-datepicker__day--010 react-datepicker__day--range-end react-datepicker__day--in-range" tabindex="-1" aria-label="Choose Monday, February 10th, 2014" role="button" aria-disabled="false">10</div>
+                                          <div class="react-datepicker__day react-datepicker__day--011" tabindex="-1" aria-label="Choose Tuesday, February 11th, 2014" role="button" aria-disabled="false">11</div>
+                                          <div class="react-datepicker__day react-datepicker__day--012" tabindex="-1" aria-label="Choose Wednesday, February 12th, 2014" role="button" aria-disabled="false">12</div>
+                                          <div class="react-datepicker__day react-datepicker__day--013" tabindex="-1" aria-label="Choose Thursday, February 13th, 2014" role="button" aria-disabled="false">13</div>
+                                          <div class="react-datepicker__day react-datepicker__day--014" tabindex="-1" aria-label="Choose Friday, February 14th, 2014" role="button" aria-disabled="false">14</div>
+                                          <div class="react-datepicker__day react-datepicker__day--015 react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Saturday, February 15th, 2014" role="button" aria-disabled="false">15</div>
+                                        </div>
+                                        <div class="react-datepicker__week">
+                                          <div class="react-datepicker__day react-datepicker__day--016 react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Sunday, February 16th, 2014" role="button" aria-disabled="false">16</div>
+                                          <div class="react-datepicker__day react-datepicker__day--017" tabindex="-1" aria-label="Choose Monday, February 17th, 2014" role="button" aria-disabled="false">17</div>
+                                          <div class="react-datepicker__day react-datepicker__day--018" tabindex="-1" aria-label="Choose Tuesday, February 18th, 2014" role="button" aria-disabled="false">18</div>
+                                          <div class="react-datepicker__day react-datepicker__day--019" tabindex="-1" aria-label="Choose Wednesday, February 19th, 2014" role="button" aria-disabled="false">19</div>
+                                          <div class="react-datepicker__day react-datepicker__day--020" tabindex="-1" aria-label="Choose Thursday, February 20th, 2014" role="button" aria-disabled="false">20</div>
+                                          <div class="react-datepicker__day react-datepicker__day--021" tabindex="-1" aria-label="Choose Friday, February 21st, 2014" role="button" aria-disabled="false">21</div>
+                                          <div class="react-datepicker__day react-datepicker__day--022 react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Saturday, February 22nd, 2014" role="button" aria-disabled="false">22</div>
+                                        </div>
+                                        <div class="react-datepicker__week">
+                                          <div class="react-datepicker__day react-datepicker__day--023 react-datepicker__day--weekend" tabindex="-1" aria-label="Choose Sunday, February 23rd, 2014" role="button" aria-disabled="false">23</div>
+                                          <div class="react-datepicker__day react-datepicker__day--024" tabindex="-1" aria-label="Choose Monday, February 24th, 2014" role="button" aria-disabled="false">24</div>
+                                          <div class="react-datepicker__day react-datepicker__day--025" tabindex="-1" aria-label="Choose Tuesday, February 25th, 2014" role="button" aria-disabled="false">25</div>
+                                          <div class="react-datepicker__day react-datepicker__day--026" tabindex="-1" aria-label="Choose Wednesday, February 26th, 2014" role="button" aria-disabled="false">26</div>
+                                          <div class="react-datepicker__day react-datepicker__day--027" tabindex="-1" aria-label="Choose Thursday, February 27th, 2014" role="button" aria-disabled="false">27</div>
+                                          <div class="react-datepicker__day react-datepicker__day--028" tabindex="-1" aria-label="Choose Friday, February 28th, 2014" role="button" aria-disabled="false">28</div>
+                                          <div class="react-datepicker__day react-datepicker__day--001 react-datepicker__day--weekend react-datepicker__day--outside-month" tabindex="-1" aria-label="Choose Saturday, March 1st, 2014" role="button" aria-disabled="false">1</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="react-datepicker__tab-loop__end" tabindex="0"></div>
+                            </div>
+                            <div class="react-datepicker-wrapper">
+                              <div class="react-datepicker__input-container"><input type="text" value="28 Января, 2020" /></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content__header-filters">
+                          <div class="date-dropdown dropdown"><button class="btn btn-filter" type="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"><svg class="svg-sprite-icon icon-calendar">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
+                              </svg></button>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item is-active" href="#">Сегодня</a><a class="dropdown-item" href="#">Прошлые 7 дней</a><a class="dropdown-item" href="#">Прошлые 14 дней</a><a class="dropdown-item" href="#">Прошлые 30 дней</a><a class="dropdown-item" href="#">Эта неделя</a><a class="dropdown-item" href="#">Прошлая неделя</a><a class="dropdown-item" href="#">Этот месяц</a><a class="dropdown-item" href="#">Прошлый месяц</a></div>
+                          </div><button class="btn btn-filter content__header-btn" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter"><svg class="svg-sprite-icon icon-filter">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#filter"></use>
+                            </svg></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseFilter">
+                      <div class="filter-collapse">
+                        <form>
+                          <div class="filter-collapse__top">
+                            <div class="filter-collapse__options">
+                              <div class="select-input">
+                                <ul class="select-input__list">
+                                  <li class="select-input__item">Гипермаркеты в городе Киев<span class="select-input__close">+</span></li>
+                                  <li class="select-input__item">Гипермаркеты в городе Киев<span class="select-input__close">+</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="filter-collapse__switch"><span>Показать все</span><label class="page-switch"><input type="checkbox" name="name" checked="checked" /><span class="page-switch__slider"></span></label></div>
+                          </div>
+                          <div class="filter-collapse__bottom"><button class="btn btn-cancel has-icon">Сбросить<span class="icon-btn"><svg class="svg-sprite-icon icon-refresh"><use xlink:href="img/sprite/symbol/sprite.svg#refresh"></use></svg></span></button><button class="btn btn-confirm has-icon">Сохранить<span class="icon-btn"><svg class="svg-sprite-icon icon-confirm"><use xlink:href="img/sprite/symbol/sprite.svg#confirm"></use></svg></span></button></div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="content__panels">
+                      <div class="content__panel">
+                        <div class="panel">
+                          <div class="panel__container">
+                            <div class="row">
+                              <div class="panel__col panel__col--statisctics col-lg-4">
+                                <div class="statistics-info">
+                                  <div class="statistics-info__row"><span class="statistics-info__label">Опрос:</span>
+                                    <p class="statistics-info__text">Гипермаркеты в городе Киев Гипермаркеты в городе Киев</p><span class="statistics-info__label">Вопрос:</span>
+                                    <p class="statistics-info__text">Что вы думаете про наш сервис? Гипермаркеты в городе Киев</p>
+                                  </div>
+                                  <div class="statistics-info__row"><span class="statistics-info__label">Терминал 1</span></div>
+                                </div>
+                              </div>
+                              <div class="panel__col col-lg-2">
+                                <div class="indicators">
+                                  <div class="indicators__togglers">
+                                    <div class="indicators-togglers"><a class="is-active" href="">CSI</a><a href="">NPS</a></div>
+                                  </div>
+                                  <p class="indicators__score">145</p>
+                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
+                                  <div class="indicators__chart"><canvas id="nps_12" width="140" height="40"></canvas></div>
+                                </div>
+                              </div>
+                              <div class="panel__col col-lg-2">
+                                <div class="indicators">
+                                  <p class="indicators__top">Ответы</p>
+                                  <p class="indicators__score">27.5 <small>тыс</small></p>
+                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
+                                  <div class="indicators__chart"><canvas id="resp_12" width="140" height="40"></canvas></div>
+                                </div>
+                              </div>
+                              <div class="panel__col col-lg-4">
+                                <div class="row">
+                                  <div class="panel__col-rate col-lg-4">
+                                    <div class="rate">
+                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-smile">
+                                          <use xlink:href="img/sprite/symbol/sprite.svg#smile"></use>
+                                        </svg></p>
+                                      <p class="rate__score">70%</p>
+                                      <p class="rate__quantity">1.8 <small>тыс</small></p>
+                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>19</span></span></p>
+                                    </div>
+                                  </div>
+                                  <div class="panel__col-rate col-lg-4">
+                                    <div class="rate">
+                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-meh">
+                                          <use xlink:href="img/sprite/symbol/sprite.svg#meh"></use>
+                                        </svg></p>
+                                      <p class="rate__score">2%</p>
+                                      <p class="rate__quantity">652</p>
+                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>34</span></span></p>
+                                    </div>
+                                  </div>
+                                  <div class="panel__col-rate col-lg-4">
+                                    <div class="rate">
+                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-sad">
+                                          <use xlink:href="img/sprite/symbol/sprite.svg#sad"></use>
+                                        </svg></p>
+                                      <p class="rate__score">4%</p>
+                                      <p class="rate__quantity">20</p>
+                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>2</span></span></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content__pagination">
+                      <nav class="page-pagination" aria-label="Page navigation">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link page-link-prev" href="#" aria-label="Previous"><svg class="svg-sprite-icon icon-move-to-next">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#move-to-next"></use>
+                              </svg></a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link is-disabled" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                          <li class="page-item"><a class="page-link is-active" href="#">7</a></li>
+                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+                          <li class="page-item"><a class="page-link" href="#">9</a></li>
+                          <li class="page-item"><a class="page-link is-disabled" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">11</a></li>
+                          <li class="page-item"><a class="page-link page-link-next" href="#" aria-label="Next"><svg class="svg-sprite-icon icon-move-to-next">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#move-to-next"></use>
+                              </svg></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo"></footer>
+    </div>
+  </div>
+  <div class="modal fade" id="resp_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100"><span>Ответы</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body"><canvas id="resp_1"></canvas></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="nps_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100"><span>NPS™</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body"><canvas id="nps_1"></canvas></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-delete fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><span class="modal-icon"><svg class="svg-sprite-icon icon-delete"><use xlink:href="img/sprite/symbol/sprite.svg#delete"></use></svg></span>
+          <h5 class="modal-title">Удалить устройство?</h5><button class="close" type="button" data-dismiss="modal" aria-label="закрыть"><span aria-hidden="true"><svg class="svg-sprite-icon icon-plus"><use xlink:href="img/sprite/symbol/sprite.svg#plus"></use></svg></span></button>
+        </div>
+        <div class="modal-body">После этого вы не сможете его востановить</div>
+        <div class="modal-footer"><button class="btn btn-modal-cancel" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-modal-confirm" type="button">Удалить</button></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/vendors.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

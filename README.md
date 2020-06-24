@@ -1,2 +1,0 @@
-# liketo
-Static markup

@@ -11,8 +11,8 @@
   <meta content="notranslate" name="google">
   <!--link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css", integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU=", crossorigin="anonymous")-->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <title>App rating page</title>
-  <meta name="description" content="App rating page description">
+  <title>App statistics page</title>
+  <meta name="description" content="App statistics page description">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -102,7 +102,7 @@
                 <section class="content">
                   <div class="content__container">
                     <div class="content__header">
-                      <h1 class="content__title">Рейтинг</h1>
+                      <h1 class="content__title">Статистика</h1>
                       <div class="content__header-options">
                         <div class="content__header-datepicker">
                           <div class="page-datepicker">
@@ -216,113 +216,11 @@
                         </form>
                       </div>
                     </div>
-                    <div class="content__panels">
-                      <div class="rating">
-                        <div class="rating__top">
-                          <div class="rating__title">Лучшие исполнители</div>
-                          <div class="rating__filters">
-                            <div class="page-select">
-                              <div class="page-select__selected">Сортировать по: Опросы</div>
-                              <ul class="page-select__list">
-                                <li>Местоположение</li>
-                                <li>Опросы</li>
-                              </ul>
-                            </div>
-                            <div class="page-select">
-                              <div class="page-select__selected">Фильтр по: NPS</div>
-                              <ul class="page-select__list">
-                                <li>NPS</li>
-                                <li>CSI</li>
-                                <li>Ответы</li>
-                              </ul>
-                            </div><svg class="svg-sprite-icon icon-filter-rating">
-                              <use xlink:href="img/sprite/symbol/sprite.svg#filter-rating"></use>
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="rating__panel">
-                          <div class="rating-panel">
-                            <div class="rating-panel__head">
-                              <div class="col-3 rating-panel__col-main"><a class="sortable-link" href="#">Опрос<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                              <div class="col-2 text-center"><a class="sortable-link" href="#">Ответы<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                              <div class="col-2 text-center"><a class="sortable-link" href="#">Тренд<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                              <div class="col-2 text-center"><a class="sortable-link" href="#">NPS Тренд<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                              <div class="col-2 text-center"><a class="sortable-link" href="#">NPS<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                              <div class="col-1 text-center"><a class="sortable-link" href="#">№<svg class="svg-sprite-icon icon-sort">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
-                                  </svg></a></div>
-                            </div>
-                            <div class="rating-panel__body">
-                              <div class="col-3">Гипермаркеты в городе Киев вход южный</div>
-                              <div class="col-2">
-                                <div class="indicators">
-                                  <p class="indicators__score">27.5 <small>тыс</small></p>
-                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                </div>
-                              </div>
-                              <div class="col-2">
-                                <div class="indicators">
-                                  <div class="indicators__progress">
-                                    <div class="progress-chart">
-                                      <div class="progress-chart__item"></div>
-                                      <div class="progress-chart__item"></div>
-                                      <div class="progress-chart__item"></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-2">
-                                <div class="indicators">
-                                  <div class="indicators__chart"><canvas id="nps_12" width="140" height="40"></canvas></div>
-                                </div>
-                              </div>
-                              <div class="col-2">
-                                <div class="indicators">
-                                  <p class="indicators__score">65</p>
-                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                </div>
-                              </div>
-                              <div class="col-1">
-                                <div class="indicators">
-                                  <p class="indicators__score">1</p>
-                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>1</span></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="statistics-start">
+                      <div class="statistics-start__container">
+                        <h2 class="statistics-start__title statistics-start__title--connection">Нет соединения</h2>
+                        <p class="statistics-start__text mb-0">Следите за статистикой уже сейчас,<br>нажмите на кнопку ниже “добавить новое устройство”.</p>
                       </div>
-                    </div>
-                    <div class="content__pagination">
-                      <nav class="page-pagination" aria-label="Page navigation">
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link page-link-prev" href="#" aria-label="Previous"><svg class="svg-sprite-icon icon-move-to-next">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#move-to-next"></use>
-                              </svg></a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link is-disabled" href="#">...</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">6</a></li>
-                          <li class="page-item"><a class="page-link is-active" href="#">7</a></li>
-                          <li class="page-item"><a class="page-link" href="#">8</a></li>
-                          <li class="page-item"><a class="page-link" href="#">9</a></li>
-                          <li class="page-item"><a class="page-link is-disabled" href="#">...</a></li>
-                          <li class="page-item"><a class="page-link" href="#">11</a></li>
-                          <li class="page-item"><a class="page-link page-link-next" href="#" aria-label="Next"><svg class="svg-sprite-icon icon-move-to-next">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#move-to-next"></use>
-                              </svg></a></li>
-                        </ul>
-                      </nav>
                     </div>
                   </div>
                 </section>
@@ -336,13 +234,14 @@
       <footer class="page-footer" role="contentinfo"></footer>
     </div>
   </div>
-  <div class="modal fade" id="nps_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal modal-delete fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header text-center">
-          <h5 class="modal-title w-100"><span>NPS™</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-header"><span class="modal-icon"><svg class="svg-sprite-icon icon-delete"><use xlink:href="img/sprite/symbol/sprite.svg#delete"></use></svg></span>
+          <h5 class="modal-title">Удалить устройство?</h5><button class="close" type="button" data-dismiss="modal" aria-label="закрыть"><span aria-hidden="true"><svg class="svg-sprite-icon icon-plus"><use xlink:href="img/sprite/symbol/sprite.svg#plus"></use></svg></span></button>
         </div>
-        <div class="modal-body"><canvas id="nps_1"></canvas></div>
+        <div class="modal-body">После этого вы не сможете его востановить</div>
+        <div class="modal-footer"><button class="btn btn-modal-cancel" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-modal-confirm" type="button">Удалить</button></div>
       </div>
     </div>
   </div>

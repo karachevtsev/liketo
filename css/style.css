@@ -10720,9 +10720,23 @@ a.text-dark:hover, a.text-dark:focus {
     @media (min-width: 992px) {
       .user-form__conatiner {
         padding-right: 58%; } }
+  .user-form__conatiner--profile {
+    padding-left: 20px; }
+    @media (min-width: 768px) {
+      .user-form__conatiner--profile {
+        padding-right: 30px; } }
+  @media (min-width: 768px) {
+    .user-form__info {
+      padding-right: 48%; } }
+  @media (min-width: 992px) {
+    .user-form__info {
+      padding-right: 58%; } }
+  @media (min-width: 768px) {
+    .user-form__change-password .form-group {
+      padding-right: 55%; } }
   @media (min-width: 992px) {
     .user-form__change-password .form-group {
-      padding-right: 100px; } }
+      padding-right: 65%; } }
   .user-form__change-password .form-group p {
     color: #c8d7e5; }
   .user-form__change-password-title {
@@ -10906,6 +10920,33 @@ a.text-dark:hover, a.text-dark:focus {
             appearance: none;
     background: url(../img/chevron.svg) 99%/100% no-repeat;
     background-size: 30px; }
+
+.page-search .form-group {
+  position: relative; }
+
+.page-search .form-control {
+  height: 30px;
+  padding-left: 34px;
+  background: #ffffff url(../img/search.svg) no-repeat 10px center; }
+  .page-search .form-control::-webkit-input-placeholder {
+    color: #a8b3c2;
+    opacity: 1; }
+  .page-search .form-control::-moz-placeholder {
+    color: #a8b3c2;
+    opacity: 1; }
+  .page-search .form-control:-ms-input-placeholder {
+    color: #a8b3c2;
+    opacity: 1; }
+  .page-search .form-control::-ms-input-placeholder {
+    color: #a8b3c2;
+    opacity: 1; }
+  .page-search .form-control::placeholder {
+    color: #a8b3c2;
+    opacity: 1; }
+  .page-search .form-control:-ms-input-placeholder {
+    color: #a8b3c2; }
+  .page-search .form-control::-ms-input-placeholder {
+    color: #a8b3c2; }
 
 .modal-delete .modal-content {
   border-radius: 5px;

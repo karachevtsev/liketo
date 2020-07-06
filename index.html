@@ -21,11 +21,12 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__container d-flex align-items-center">
-          <div class="col"><a class="logo" href="/"><img src="img/logo.png" alt="Liketo" width="112" height="41"></a></div>
+          <div class="col"><a class="logo" href="/"><img src="img/logo-sm.png" alt="Liketo" width="41" height="41"></a></div>
           <div class="col d-none d-sm-flex justify-content-center">
             <div class="logo-customer"><span class="logo-customer__text">ATB Market</span></div>
           </div>
           <div class="col d-flex justify-content-end">
+            <div class="lang d-flex align-items-center"><a class="is-active" href="">UA</a><a href="">RU</a></div>
             <div class="login">
               <div class="login__container"><span class="login__avatar user-avatar">AO</span><button class="login__btn"><svg class="svg-sprite-icon icon-menu">
                     <use xlink:href="img/sprite/symbol/sprite.svg#menu"></use>
@@ -38,27 +39,30 @@
                       <li class="user-data__info"><span class="user-data__info-name">Абдул Обулов</span><span class="user-data__info-mail">abdulobdulov@mail.com</span></li>
                     </ul>
                   </li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="/"><svg class="svg-sprite-icon icon-statistics">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="statistics.html"><svg class="svg-sprite-icon icon-statistics">
                         <use xlink:href="img/sprite/symbol/sprite.svg#statistics"></use>
                       </svg>Статистика</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="/"><svg class="svg-sprite-icon icon-rating">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="rating.html"><svg class="svg-sprite-icon icon-rating">
                         <use xlink:href="img/sprite/symbol/sprite.svg#rating"></use>
                       </svg>Рейтинг</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="/"><svg class="svg-sprite-icon icon-polls">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="polls.html"><svg class="svg-sprite-icon icon-polls">
                         <use xlink:href="img/sprite/symbol/sprite.svg#polls"></use>
                       </svg>Опросы</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="/"><svg class="svg-sprite-icon icon-devices">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="devices.html"><svg class="svg-sprite-icon icon-devices">
                         <use xlink:href="img/sprite/symbol/sprite.svg#devices"></use>
                       </svg>Устройства</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="/"><svg class="svg-sprite-icon icon-reports">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="reports.html"><svg class="svg-sprite-icon icon-reports">
                         <use xlink:href="img/sprite/symbol/sprite.svg#reports"></use>
                       </svg>Отчёты</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--profile" href="/"><svg class="svg-sprite-icon icon-profile">
+                  <li class="menu__item"><a class="menu__link menu__link--profile" href="user-profile.html"><svg class="svg-sprite-icon icon-profile">
                         <use xlink:href="img/sprite/symbol/sprite.svg#profile"></use>
                       </svg>Профиль</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--admin" href="/"><svg class="svg-sprite-icon icon-admin">
+                  <li class="menu__item"><a class="menu__link menu__link--admin" href="users.html"><svg class="svg-sprite-icon icon-admin">
                         <use xlink:href="img/sprite/symbol/sprite.svg#admin"></use>
                       </svg>Администрирование</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link--help" href="faq.html"><svg class="svg-sprite-icon icon-help">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#help"></use>
+                      </svg>FAQ</a></li>
                   <li class="menu__item"><a class="menu__link menu__link--logout" href="/"><svg class="svg-sprite-icon icon-logout">
                         <use xlink:href="img/sprite/symbol/sprite.svg#logout"></use>
                       </svg>Выйти</a></li>
@@ -102,7 +106,10 @@
                 <div class="row">
                   <div class="col-md-5">
                     <h5 class="mb-4">Страницы приложения</h5>
-                    <div class="list-group"><a class="list-group-item list-group-item-action" href="login.html" target="_blank"><b>Вход в приложение</b></a><a class="list-group-item list-group-item-action" href="restore.html" target="_blank"><b>Забыл пароль</b></a><a class="list-group-item list-group-item-action" href="restore-confirm.html" target="_blank"><b>Восстановление пароля</b></a><a class="list-group-item list-group-item-action" href="statistics.html" target="_blank"><b>Статистика</b></a><a class="list-group-item list-group-item-action" href="statistics-start.html" target="_blank">- Пустая статистика</a><a class="list-group-item list-group-item-action" href="statistics-connection.html" target="_blank">- Нет соединения</a><a class="list-group-item list-group-item-action" href="rating.html" target="_blank"><b>Рейтинг</b></a><a class="list-group-item list-group-item-action" href="polls.html" target="_blank"><b>Опросы</b></a><a class="list-group-item list-group-item-action" href="polls-create.html" target="_blank">- Создайте новый опрос</a><a class="list-group-item list-group-item-action" href="polls-edit.html" target="_blank">- Редактировать опрос</a><a class="list-group-item list-group-item-action" href="reports.html" target="_blank"><b>Отчеты</b></a><a class="list-group-item list-group-item-action" href="report-create.html" target="_blank">- Создайте новый отчет</a><a class="list-group-item list-group-item-action" href="report-edit.html" target="_blank">- Редактировать отчет</a><a class="list-group-item list-group-item-action" href="devices.html" target="_blank"><b>Устройства</b></a><a class="list-group-item list-group-item-action" href="device-create.html" target="_blank">- Добавьте новое устройство</a><a class="list-group-item list-group-item-action" href="device-edit.html" target="_blank">- Редактировать устройство</a><a class="list-group-item list-group-item-action" href="users.html" target="_blank"><b>Администрирование</b></a><a class="list-group-item list-group-item-action" href="user-edit.html" target="_blank">- Редактирование пользователя</a><a class="list-group-item list-group-item-action" href="user-invite.html" target="_blank">- Пригласить пользователя</a><a class="list-group-item list-group-item-action" href="user-profile.html" target="_blank"><b>Профайл</b></a></div>
+                    <div class="list-group"><a class="list-group-item list-group-item-action" href="login.html" target="_blank"><b>Вход в приложение</b></a><a class="list-group-item list-group-item-action" href="restore.html" target="_blank"><b>Забыл пароль</b></a><a class="list-group-item list-group-item-action" href="restore-confirm.html" target="_blank"><b>Восстановление пароля</b></a><a class="list-group-item list-group-item-action" href="statistics.html" target="_blank"><b>Статистика</b></a><a class="list-group-item list-group-item-action" href="statistics-start.html" target="_blank">- Нет активных опросов</a><a class="list-group-item list-group-item-action" href="statistics-no-data.html" target="_blank">- Нет данных за выбранный период</a><a class="list-group-item list-group-item-action" href="statistics-connection.html" target="_blank">- Нет соединения</a>
+                      <div class="list-group-item list-group-item-action"><b>Рейтинг</b></div><a class="list-group-item list-group-item-action" href="rating.html" target="_blank">- Рейтинг (Сортировка по Опросам, фильтр по NPS)</a><a class="list-group-item list-group-item-action" href="rating-answers-filter.html" target="_blank">- Рейтинг (Сортировка по Опросам, фильр по Ответам)</a><a class="list-group-item list-group-item-action" href="rating-no-data.html" target="_blank">- Нет данных за выбранный период</a><a class="list-group-item list-group-item-action" href="polls.html" target="_blank"><b>Опросы</b></a><a class="list-group-item list-group-item-action" href="polls-create.html" target="_blank">- Создайте новый опрос</a><a class="list-group-item list-group-item-action" href="polls-edit.html" target="_blank">- Редактировать опрос</a><a class="list-group-item list-group-item-action" href="reports.html" target="_blank"><b>Отчеты</b></a><a class="list-group-item list-group-item-action" href="report-create.html" target="_blank">- Создайте новый отчет</a><a class="list-group-item list-group-item-action" href="report-edit.html" target="_blank">- Редактировать отчет</a><a class="list-group-item list-group-item-action" href="devices.html" target="_blank"><b>Устройства</b></a><a class="list-group-item list-group-item-action" href="device-create.html" target="_blank">- Добавьте новое устройство</a><a class="list-group-item list-group-item-action" href="device-edit.html" target="_blank">- Редактировать устройство</a><a class="list-group-item list-group-item-action" href="users.html" target="_blank"><b>Пользователи</b></a><a class="list-group-item list-group-item-action" href="user-edit.html" target="_blank">- Редактирование пользователя</a><a class="list-group-item list-group-item-action" href="user-invite.html" target="_blank">- Пригласить пользователя</a><a class="list-group-item list-group-item-action" href="user-profile.html" target="_blank"><b>Настройки профиля</b></a>
+                      <div class="list-group-item list-group-item-action"><b>Страницы ошибок</b></div><a class="list-group-item list-group-item-action" href="404.html" target="_blank">- 404</a><a class="list-group-item list-group-item-action" href="503.html" target="_blank">- 503</a>
+                    </div>
                   </div>
                 </div>
               </div>

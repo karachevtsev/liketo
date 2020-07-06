@@ -11,8 +11,8 @@
   <meta content="notranslate" name="google">
   <!--link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css", integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU=", crossorigin="anonymous")-->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-  <title>App statistics page</title>
-  <meta name="description" content="App statistics page description">
+  <title>App rating page</title>
+  <meta name="description" content="App rating page description">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -106,7 +106,7 @@
                 <section class="content">
                   <div class="content__container">
                     <div class="content__header">
-                      <h1 class="content__title">Статистика</h1>
+                      <h1 class="content__title">Рейтинг</h1>
                       <div class="content__header-options">
                         <div class="content__header-datepicker">
                           <div class="page-datepicker">
@@ -221,179 +221,82 @@
                       </div>
                     </div>
                     <div class="content__panels">
-                      <div class="content__panel">
-                        <div class="statistics">
-                          <div class="statistics__container">
-                            <div class="row">
-                              <div class="statistics__col statistics__col--topic col-md-12 col-lg-3">
-                                <div class="statistics-info">
-                                  <div class="statistics-info__row">
-                                    <p class="statistics-info__overal-title">В общем</p><span class="statistics-info__label">Опросы:</span>
-                                    <ul class="statistics-info__list">
-                                      <!-- Показываем первые 4, остальные не показывем, полсе 4-го ...-->
-                                      <li>Гипермаркеты в городе Киев 1</li>
-                                      <li>Гипермаркеты в городе Киев 2 Гипермаркеты в городе Киев 2</li>
-                                      <li>Гипермаркеты в городе Киев 3</li>
-                                      <li>Гипермаркеты в городе Киев 3</li>
-                                      <li>...</li>
-                                    </ul>
-                                  </div>
-                                  <div class="statistics-info__row">
-                                    <p class="statistics-info__label mb-0">Терминал 1</p>
-                                    <p class="statistics-info__update mb-0">Последнее обновление 20.06.20 | 13.00</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="statistics__col statistics__col--scores col-md-6 col-lg-2">
-                                <div class="indicators">
-                                  <div class="indicators__togglers">
-                                    <div class="indicators-togglers">
-                                      <ul class="nav" role="tablist">
-                                        <li role="presentation" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;b&gt;Customer Satisfaction Index&lt;/b&gt; &lt;br&gt;индекс удовлетворенности клиентов"><a class="active" data-toggle="tab" href="#csi-11" role="tab" aria-controls="csi-1" aria-selected="true">CSI</a></li>
-                                        <li role="presentation" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;b&gt;Net Promoter Score&lt;/b&gt; &lt;br&gt; индекс потребительской лояльности"><a data-toggle="tab" href="#nps-11" role="tab" aria-controls="nps-1" aria-selected="false">NPS</a></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <div class="tab-content">
-                                    <div class="tab-pane fade show active" role="tabpanel" id="csi-11">
-                                      <p class="indicators__score">85.3%</p>
-                                      <p class="indicators__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>2</span></p>
-                                      <div class="indicators__chart"><canvas id="csi_11"></canvas></div>
-                                    </div>
-                                    <div class="tab-pane fade" role="tabpanel" id="nps-11">
-                                      <p class="indicators__score">145</p>
-                                      <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                      <div class="indicators__chart"><canvas id="nps_11"></canvas></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="statistics__col statistics__col--indicators col-md-6 col-lg-2">
-                                <div class="indicators">
-                                  <p class="indicators__top">Ответы</p>
-                                  <p class="indicators__score">27.5 <small>тыс</small></p>
-                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                  <div class="indicators__chart"><canvas id="resp_11"></canvas></div>
-                                </div>
-                              </div>
-                              <div class="statistics__col statistics__col--rate col-lg-5">
-                                <div class="row">
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-sad">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#sad"></use>
-                                        </svg></p>
-                                      <p class="rate__score">4%</p>
-                                      <p class="rate__quantity">20</p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>2</span></span></p>
-                                    </div>
-                                  </div>
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-meh">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#meh"></use>
-                                        </svg></p>
-                                      <p class="rate__score">2%</p>
-                                      <p class="rate__quantity">652</p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>34</span></span></p>
-                                    </div>
-                                  </div>
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-smile">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#smile"></use>
-                                        </svg></p>
-                                      <p class="rate__score">70%</p>
-                                      <p class="rate__quantity">1.8 <small>тыс</small></p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>19</span></span></p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                      <div class="rating">
+                        <div class="rating__top">
+                          <div class="rating__title">Лучшие исполнители</div>
+                          <div class="rating__filters">
+                            <div class="page-select">
+                              <div class="page-select__selected">Сортировать по: Местоположение</div>
+                              <ul class="page-select__list">
+                                <li>Местоположение</li>
+                                <li>Опросы</li>
+                              </ul>
                             </div>
+                            <div class="page-select">
+                              <div class="page-select__selected">Фильтр по: Ответы</div>
+                              <ul class="page-select__list">
+                                <li>NPS</li>
+                                <li>CSI</li>
+                                <li>Ответы</li>
+                              </ul>
+                            </div><svg class="svg-sprite-icon icon-filter-rating">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#filter-rating"></use>
+                            </svg>
                           </div>
                         </div>
-                      </div>
-                      <div class="content__panel">
-                        <div class="statistics">
-                          <div class="statistics__container">
-                            <div class="row">
-                              <div class="statistics__col statistics__col--topic col-md-12 col-lg-3">
-                                <div class="statistics-info">
-                                  <div class="statistics-info__row"><span class="statistics-info__label">Опрос:</span>
-                                    <p class="statistics-info__text">Гипермаркеты в городе Киев</p><span class="statistics-info__label">Вопрос:</span>
-                                    <p class="statistics-info__text statistics-info__text--question">Что вы думаете про наш сервис?</p>
-                                  </div>
-                                  <div class="statistics-info__row">
-                                    <p class="statistics-info__label mb-0">Терминал 1</p>
-                                    <p class="statistics-info__update mb-0">Последнее обновление 20.06.20 | 13.00</p>
-                                  </div>
+                        <div class="rating__panel">
+                          <div class="rating-panel">
+                            <div class="rating-panel__head">
+                              <div class="col-3 rating-panel__col-main"><a class="sortable-link" href="#">Местоположение<svg class="svg-sprite-icon icon-sort">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
+                                  </svg></a></div>
+                              <div class="col-3 text-center"><a class="sortable-link" href="#">Тренд<svg class="svg-sprite-icon icon-sort">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
+                                  </svg></a></div>
+                              <div class="col-3 text-center"><a class="sortable-link" href="#">Ответы<svg class="svg-sprite-icon icon-sort">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
+                                  </svg></a></div>
+                              <!--.col-2.text-centera(href='#' class='sortable-link')
+  | Тренд
+  +icon('sort')
+-->
+                              <!--.col-2.text-centera(href='#' class='sortable-link')
+  | NPS
+  +icon('sort')-->
+                              <div class="col-3 text-center"><a class="sortable-link" href="#">№<svg class="svg-sprite-icon icon-sort">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
+                                  </svg></a></div>
+                            </div>
+                            <div class="rating-panel__body">
+                              <div class="col-3">Гипермаркеты в городе Киев вход южный</div>
+                              <div class="col-3">
+                                <div class="indicators">
+                                  <div class="indicators__chart"><canvas id="resp_12" width="140" height="40"></canvas></div>
                                 </div>
                               </div>
-                              <div class="statistics__col statistics__col--scores col-md-6 col-lg-2">
+                              <div class="col-3">
                                 <div class="indicators">
-                                  <div class="indicators__togglers">
-                                    <div class="indicators-togglers">
-                                      <ul class="nav" role="tablist">
-                                        <li role="presentation" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;b&gt;Customer Satisfaction Index&lt;/b&gt; &lt;br&gt;индекс удовлетворенности клиентов"><a class="active" data-toggle="tab" href="#csi-1" role="tab" aria-controls="csi-1" aria-selected="true">CSI</a></li>
-                                        <li role="presentation" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;b&gt;Net Promoter Score&lt;/b&gt; &lt;br&gt; индекс потребительской лояльности"><a data-toggle="tab" href="#nps-1" role="tab" aria-controls="nps-1" aria-selected="false">NPS</a></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <div class="tab-content">
-                                    <div class="tab-pane fade show active" role="tabpanel" id="csi-1">
-                                      <p class="indicators__score">85.3%</p>
-                                      <p class="indicators__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>2</span></p>
-                                      <div class="indicators__chart"><canvas id="csi_12"></canvas></div>
-                                    </div>
-                                    <div class="tab-pane fade" role="tabpanel" id="nps-1">
-                                      <p class="indicators__score">145</p>
-                                      <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                      <div class="indicators__chart"><canvas id="nps_12"></canvas></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="statistics__col statistics__col--indicators col-md-6 col-lg-2">
-                                <div class="indicators">
-                                  <p class="indicators__top">Ответы</p>
                                   <p class="indicators__score">27.5 <small>тыс</small></p>
                                   <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
-                                  <div class="indicators__chart"><canvas id="resp_12"></canvas></div>
                                 </div>
                               </div>
-                              <div class="statistics__col statistics__col--rate col-lg-5">
-                                <div class="row">
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-sad">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#sad"></use>
-                                        </svg></p>
-                                      <p class="rate__score">4%</p>
-                                      <p class="rate__quantity">20</p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>2</span></span></p>
-                                    </div>
-                                  </div>
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-meh">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#meh"></use>
-                                        </svg></p>
-                                      <p class="rate__score">2%</p>
-                                      <p class="rate__quantity">652</p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>34</span></span></p>
-                                    </div>
-                                  </div>
-                                  <div class="statistics__col-rate col-lg-4">
-                                    <div class="rate">
-                                      <p class="rate__icon"><svg class="svg-sprite-icon icon-smile">
-                                          <use xlink:href="img/sprite/symbol/sprite.svg#smile"></use>
-                                        </svg></p>
-                                      <p class="rate__score">70%</p>
-                                      <p class="rate__quantity">1.8 <small>тыс</small></p>
-                                      <p class="rate__percent"><span class="indicators-percent is-down"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg><span>19</span></span></p>
-                                    </div>
-                                  </div>
+                              <!--.col-2.indicators
+  .indicators__progress
+    .progress-chart
+      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Недовольны:<br>100 | 10%")
+      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Нейтральны:<br>100 | 30%")
+      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Довольны:<br>100 | 60%")
+-->
+                              <!--.col-2.indicators
+  p.indicators__score 65
+  p.indicators__percent
+    span.indicators-percent.is-up
+      +icon('up-arrow')
+      | 24%-->
+                              <div class="col-3">
+                                <div class="indicators">
+                                  <p class="indicators__score">1</p>
+                                  <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>1</span></p>
                                 </div>
                               </div>
                             </div>
@@ -434,16 +337,6 @@
       <footer class="page-footer" role="contentinfo"></footer>
     </div>
   </div>
-  <div class="modal fade" id="resp_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h5 class="modal-title w-100"><span>Ответы</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body"><canvas id="resp_1"></canvas></div>
-      </div>
-    </div>
-  </div>
   <div class="modal fade" id="nps_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
@@ -454,13 +347,13 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="csi_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade" id="resp_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header text-center">
-          <h5 class="modal-title w-100"><span>CSI</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h5 class="modal-title w-100"><span>Ответы</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         </div>
-        <div class="modal-body"><canvas id="csi_1"></canvas></div>
+        <div class="modal-body"><canvas id="resp_1"></canvas></div>
       </div>
     </div>
   </div>

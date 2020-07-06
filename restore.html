@@ -27,7 +27,8 @@
               <p class="login-form__help-text mb-4">Введите адрес электронной почты ниже,
                 и мы вышлем вам ссылку для сброса</p>
               <form>
-                <div class="form-group mb-5"><label for="restore-email">Email</label><input class="form-control" id="restore-email" type="email" name="restore-email" required>
+                <div class="form-group mb-5">
+                  <!-- use is-valid or is-invalid class for client-side form fields validation--><label for="restore-email"><span class="required-label">*</span>Email</label><input class="form-control is-invalid" id="restore-email" type="email" name="restore-email" required>
                   <div class="error"><span>Ошибка при валидации</span></div>
                 </div>
                 <div class="form-group mb-0"><button class="btn btn-confirm d-block w-100">Сбросить пароль</button></div>

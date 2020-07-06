@@ -21,11 +21,12 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__container d-flex align-items-center">
-          <div class="col"><a class="logo" href="/"><img src="img/logo.png" alt="Liketo" width="112" height="41"></a></div>
+          <div class="col"><a class="logo" href="/"><img src="img/logo-sm.png" alt="Liketo" width="41" height="41"></a></div>
           <div class="col d-none d-sm-flex justify-content-center">
             <div class="logo-customer"><span class="logo-customer__text">ATB Market</span></div>
           </div>
           <div class="col d-flex justify-content-end">
+            <div class="lang d-flex align-items-center"><a class="is-active" href="">UA</a><a href="">RU</a></div>
             <div class="login">
               <div class="login__container"><span class="login__avatar user-avatar">AO</span><button class="login__btn"><svg class="svg-sprite-icon icon-menu">
                     <use xlink:href="img/sprite/symbol/sprite.svg#menu"></use>
@@ -38,27 +39,30 @@
                       <li class="user-data__info"><span class="user-data__info-name">Абдул Обулов</span><span class="user-data__info-mail">abdulobdulov@mail.com</span></li>
                     </ul>
                   </li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="/"><svg class="svg-sprite-icon icon-statistics">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="statistics.html"><svg class="svg-sprite-icon icon-statistics">
                         <use xlink:href="img/sprite/symbol/sprite.svg#statistics"></use>
                       </svg>Статистика</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="/"><svg class="svg-sprite-icon icon-rating">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="rating.html"><svg class="svg-sprite-icon icon-rating">
                         <use xlink:href="img/sprite/symbol/sprite.svg#rating"></use>
                       </svg>Рейтинг</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="/"><svg class="svg-sprite-icon icon-polls">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="polls.html"><svg class="svg-sprite-icon icon-polls">
                         <use xlink:href="img/sprite/symbol/sprite.svg#polls"></use>
                       </svg>Опросы</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="/"><svg class="svg-sprite-icon icon-devices">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="devices.html"><svg class="svg-sprite-icon icon-devices">
                         <use xlink:href="img/sprite/symbol/sprite.svg#devices"></use>
                       </svg>Устройства</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="/"><svg class="svg-sprite-icon icon-reports">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="reports.html"><svg class="svg-sprite-icon icon-reports">
                         <use xlink:href="img/sprite/symbol/sprite.svg#reports"></use>
                       </svg>Отчёты</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--profile" href="/"><svg class="svg-sprite-icon icon-profile">
+                  <li class="menu__item"><a class="menu__link menu__link--profile" href="user-profile.html"><svg class="svg-sprite-icon icon-profile">
                         <use xlink:href="img/sprite/symbol/sprite.svg#profile"></use>
                       </svg>Профиль</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--admin" href="/"><svg class="svg-sprite-icon icon-admin">
+                  <li class="menu__item"><a class="menu__link menu__link--admin" href="users.html"><svg class="svg-sprite-icon icon-admin">
                         <use xlink:href="img/sprite/symbol/sprite.svg#admin"></use>
                       </svg>Администрирование</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link--help" href="faq.html"><svg class="svg-sprite-icon icon-help">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#help"></use>
+                      </svg>FAQ</a></li>
                   <li class="menu__item"><a class="menu__link menu__link--logout" href="/"><svg class="svg-sprite-icon icon-logout">
                         <use xlink:href="img/sprite/symbol/sprite.svg#logout"></use>
                       </svg>Выйти</a></li>
@@ -218,7 +222,7 @@
                     </div>
                     <div class="statistics-start">
                       <div class="statistics-start__container">
-                        <h2 class="statistics-start__title">У вас нету данных за выбранный период<br>Начните прямо сейчас!</h2>
+                        <h2 class="statistics-start__title">У вас нет активных опросов.<br>Начните прямо сейчас!</h2>
                         <div class="statistics-start__list">
                           <ul class="start-list">
                             <li>Добавьте<br>новое устройство</li>

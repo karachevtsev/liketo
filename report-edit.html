@@ -21,11 +21,12 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__container d-flex align-items-center">
-          <div class="col"><a class="logo" href="/"><img src="img/logo.png" alt="Liketo" width="112" height="41"></a></div>
+          <div class="col"><a class="logo" href="/"><img src="img/logo-sm.png" alt="Liketo" width="41" height="41"></a></div>
           <div class="col d-none d-sm-flex justify-content-center">
             <div class="logo-customer"><span class="logo-customer__text">ATB Market</span></div>
           </div>
           <div class="col d-flex justify-content-end">
+            <div class="lang d-flex align-items-center"><a class="is-active" href="">UA</a><a href="">RU</a></div>
             <div class="login">
               <div class="login__container"><span class="login__avatar user-avatar">AO</span><button class="login__btn"><svg class="svg-sprite-icon icon-menu">
                     <use xlink:href="img/sprite/symbol/sprite.svg#menu"></use>
@@ -38,27 +39,30 @@
                       <li class="user-data__info"><span class="user-data__info-name">Абдул Обулов</span><span class="user-data__info-mail">abdulobdulov@mail.com</span></li>
                     </ul>
                   </li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="/"><svg class="svg-sprite-icon icon-statistics">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--statistics is-active" href="statistics.html"><svg class="svg-sprite-icon icon-statistics">
                         <use xlink:href="img/sprite/symbol/sprite.svg#statistics"></use>
                       </svg>Статистика</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="/"><svg class="svg-sprite-icon icon-rating">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--rating" href="rating.html"><svg class="svg-sprite-icon icon-rating">
                         <use xlink:href="img/sprite/symbol/sprite.svg#rating"></use>
                       </svg>Рейтинг</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="/"><svg class="svg-sprite-icon icon-polls">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--polls" href="polls.html"><svg class="svg-sprite-icon icon-polls">
                         <use xlink:href="img/sprite/symbol/sprite.svg#polls"></use>
                       </svg>Опросы</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="/"><svg class="svg-sprite-icon icon-devices">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--devices" href="devices.html"><svg class="svg-sprite-icon icon-devices">
                         <use xlink:href="img/sprite/symbol/sprite.svg#devices"></use>
                       </svg>Устройства</a></li>
-                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="/"><svg class="svg-sprite-icon icon-reports">
+                  <li class="menu__item d-lg-none"><a class="menu__link menu__link--reports" href="reports.html"><svg class="svg-sprite-icon icon-reports">
                         <use xlink:href="img/sprite/symbol/sprite.svg#reports"></use>
                       </svg>Отчёты</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--profile" href="/"><svg class="svg-sprite-icon icon-profile">
+                  <li class="menu__item"><a class="menu__link menu__link--profile" href="user-profile.html"><svg class="svg-sprite-icon icon-profile">
                         <use xlink:href="img/sprite/symbol/sprite.svg#profile"></use>
                       </svg>Профиль</a></li>
-                  <li class="menu__item"><a class="menu__link menu__link--admin" href="/"><svg class="svg-sprite-icon icon-admin">
+                  <li class="menu__item"><a class="menu__link menu__link--admin" href="users.html"><svg class="svg-sprite-icon icon-admin">
                         <use xlink:href="img/sprite/symbol/sprite.svg#admin"></use>
                       </svg>Администрирование</a></li>
+                  <li class="menu__item"><a class="menu__link menu__link--help" href="faq.html"><svg class="svg-sprite-icon icon-help">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#help"></use>
+                      </svg>FAQ</a></li>
                   <li class="menu__item"><a class="menu__link menu__link--logout" href="/"><svg class="svg-sprite-icon icon-logout">
                         <use xlink:href="img/sprite/symbol/sprite.svg#logout"></use>
                       </svg>Выйти</a></li>
@@ -101,7 +105,7 @@
               <div class="page-layout__content">
                 <section class="content">
                   <div class="content__container">
-                    <div class="content__breadcrumb-back"><a href="/"><svg class="svg-sprite-icon icon-left-arrow">
+                    <div class="content__breadcrumb-back"><a href="reports.html"><svg class="svg-sprite-icon icon-left-arrow">
                           <use xlink:href="img/sprite/symbol/sprite.svg#left-arrow"></use>
                         </svg>отчеты</a></div>
                     <div class="content__header">
@@ -137,8 +141,15 @@
                             </div>
                             <div class="form-group pb-4 mb-0 has-label-line"><label for="report-period-first">Выберите период:</label><select class="form-control mb-3" id="report-period-first">
                                 <option value="0">Сегодня</option>
-                                <option value="1">Последние 7 дней</option>
-                                <option value="2">Пользовательский диапазон дат</option>
+                                <option value="1">Вчерашний день</option>
+                                <option value="2">Прошлые 7 дней</option>
+                                <option value="3">Прошлые 14 дней</option>
+                                <option value="4">Прошлые 30 дней</option>
+                                <option value="5">Эта неделя</option>
+                                <option value="6">Прошлая неделя</option>
+                                <option value="7">Этот месяц</option>
+                                <option value="8">Прошлый месяц</option>
+                                <option value="9">Пользовательский диапазон дат</option>
                               </select><span class="label-number">3</span>
                               <div class="form-group-datapicker mb-4" id="report-datapicker-first">
                                 <div class="page-datepicker">
@@ -307,15 +318,29 @@
                                   </div>
                                 </div>
                               </div><select class="form-control mt-3" id="report-period-last">
-                                <option>Вчера</option>
+                                <option value="0">Сегодня</option>
+                                <option value="1">Вчерашний день</option>
+                                <option value="2">Прошлые 7 дней</option>
+                                <option value="3">Прошлые 14 дней</option>
+                                <option value="4">Прошлые 30 дней</option>
+                                <option value="5">Эта неделя</option>
+                                <option value="6">Прошлая неделя</option>
+                                <option value="7">Этот месяц</option>
+                                <option value="8">Прошлый месяц</option>
+                                <option value="9">Пользовательский диапазон дат</option>
                               </select>
                             </div>
                             <div class="form-group pb-4 mb-0 has-label-line"><label for="periodicity">Частота отправки:</label><select class="form-control" id="periodicity">
                                 <option>Каждый день</option>
                               </select><span class="label-number">4</span></div>
-                            <div class="form-group pb-4 mb-0"><label for="send">Отправить отчет на почту:</label><select class="form-control mb-3" id="send">
-                                <option>abdulobdulov@mail.com</option>
-                              </select><span class="label-number">5</span></div>
+                            <div class="form-group pb-4 mb-0"><label for="send">Отправить отчет на почту:</label>
+                              <div class="select-input" id="send">
+                                <ul class="select-input__list">
+                                  <li class="select-input__item">abdulobdulov@mail.com<span class="select-input__close">+</span></li>
+                                  <li class="select-input__item">abdulobdulov@mail.com<span class="select-input__close">+</span></li>
+                                </ul>
+                              </div><span class="label-number">5</span>
+                            </div>
                             <div class="form-group has-submit-btn mb-0"><button class="btn btn-confirm has-icon">Сохранить<span class="icon-btn"><svg class="svg-sprite-icon icon-confirm"><use xlink:href="img/sprite/symbol/sprite.svg#confirm"></use></svg></span></button><button class="btn btn-cancel has-icon">Отмена<span class="icon-btn"><svg class="svg-sprite-icon icon-close"><use xlink:href="img/sprite/symbol/sprite.svg#close"></use></svg></span></button></div>
                           </form>
                         </div>

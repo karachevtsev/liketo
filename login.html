@@ -25,10 +25,17 @@
             <div class="login-form__container">
               <h1 class="login-form__title">Войдите в систему</h1>
               <form>
-                <div class="form-group mb-4"><label for="email">Email</label><input class="form-control" id="email" type="email" name="email" required>
+                <!-- use is-valid or is-invalid class for client-side form fields validation-->
+                <div class="form-group mb-4"><label for="email"><span class="required-label">*</span>Email</label>
+                  <div class="form-control-wrapper"><input class="form-control form-control-email is-valid" id="email" type="email" name="email" required><svg class="svg-sprite-icon icon-email">
+                      <use xlink:href="img/sprite/symbol/sprite.svg#email"></use>
+                    </svg></div>
                   <div class="error"><span>Неверно введен логин или пароль</span></div>
                 </div>
-                <div class="form-group mb-4"><label for="password">Password</label><input class="form-control" id="password" type="password" name="password" required>
+                <div class="form-group mb-4"><label for="password"><span class="required-label">*</span>Password</label>
+                  <div class="form-control-wrapper"><input class="form-control form-control-password is-invalid" id="password" type="password" name="password" required><svg class="svg-sprite-icon icon-lock">
+                      <use xlink:href="img/sprite/symbol/sprite.svg#lock"></use>
+                    </svg><span class="toggle-password" toggle="#password"><svg class="svg-sprite-icon icon-eye"><use xlink:href="img/sprite/symbol/sprite.svg#eye"></use></svg></span></div>
                   <div class="error"><span>Неверно введен логин или пароль</span></div>
                 </div>
                 <div class="d-flex justify-content-between mb-3">

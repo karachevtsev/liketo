@@ -25,10 +25,18 @@
             <div class="login-form__container">
               <h1 class="login-form__title login-form__title--no-icon">Восстановление пароля</h1>
               <form>
-                <div class="form-group mb-4"><label for="restore-password">Введите новый пароль</label><input class="form-control" id="restore-password" type="password" name="" required>
+                <div class="form-group mb-4">
+                  <!-- is-valid class for client-side form fields validation--><label for="restore-password"><span class="required-label">*</span>Введите новый пароль</label>
+                  <div class="form-control-wrapper"><input class="form-control form-control-password is-valid" id="restore-password" type="password" name="" required><svg class="svg-sprite-icon icon-lock">
+                      <use xlink:href="img/sprite/symbol/sprite.svg#lock"></use>
+                    </svg><span class="toggle-password" toggle="#restore-password"><svg class="svg-sprite-icon icon-eye"><use xlink:href="img/sprite/symbol/sprite.svg#eye"></use></svg></span></div>
                   <div class="error"><span>Ошибка при валидации</span></div>
                 </div>
-                <div class="form-group mb-5"><label for="restore-password-confirm">Повторите новый пароль</label><input class="form-control" id="restore-password-confirm" type="password" name="" required>
+                <div class="form-group mb-5">
+                  <!-- is-invalid class for client-side form fields validation--><label for="restore-password-confirm"><span class="required-label">*</span>Повторите новый пароль</label>
+                  <div class="form-control-wrapper"><input class="form-control form-control-password is-invalid" id="restore-password-confirm" type="password" name="" required><svg class="svg-sprite-icon icon-lock">
+                      <use xlink:href="img/sprite/symbol/sprite.svg#lock"></use>
+                    </svg><span class="toggle-password" toggle="#restore-password-confirm"><svg class="svg-sprite-icon icon-eye"><use xlink:href="img/sprite/symbol/sprite.svg#eye"></use></svg></span></div>
                   <div class="error"><span>Ошибка при валидации</span></div>
                 </div>
                 <div class="form-group mb-0"><button class="btn btn-confirm d-block w-100">Сохранить</button></div>

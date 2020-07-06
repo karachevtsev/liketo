@@ -112,10 +112,11 @@
                       <div class="user-form">
                         <div class="user-form__conatiner">
                           <form>
-                            <div class="form-group mb-4"><label for="email">Email</label><input class="form-control" id="email" type="email" name="email" required></div>
-                            <div class="form-group mb-4"><label for="firstName">Имя</label><input class="form-control" id="firstName" type="text" name="firstName" required></div>
-                            <div class="form-group mb-4"><label for="lastName">Фамилия</label><input class="form-control" id="lastName" type="text" name="lastName" required></div>
-                            <div class="form-group mb-4"><label for="company">Компания</label><input class="form-control" id="company" type="text" name="company" required></div>
+                            <!-- use is-valid or is-invalid class for client-side form fields validation-->
+                            <div class="form-group mb-4"><label for="email"><span class="required-label">*</span>Email</label><input class="form-control is-valid" id="email" type="email" name="email" required></div>
+                            <div class="form-group mb-4"><label for="firstName"><span class="required-label">*</span>Имя</label><input class="form-control is-invalid" id="firstName" type="text" name="firstName" required></div>
+                            <div class="form-group mb-4"><label for="lastName"><span class="required-label">*</span>Фамилия</label><input class="form-control" id="lastName" type="text" name="lastName" required></div>
+                            <div class="form-group mb-4"><label for="company"><span class="required-label">*</span>Компания</label><input class="form-control" id="company" type="text" name="company" required></div>
                             <div class="form-group has-page-switch mb-5"><span class="page-switch-label">Сделать администратором</span><label class="page-switch"><input type="checkbox" name="admin" /><span class="page-switch__slider"></span></label></div>
                             <div class="form-group has-submit-btn mb-0"><button class="btn btn-confirm has-icon">Сохранить<span class="icon-btn"><svg class="svg-sprite-icon icon-confirm"><use xlink:href="img/sprite/symbol/sprite.svg#confirm"></use></svg></span></button></div>
                           </form>

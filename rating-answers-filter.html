@@ -256,13 +256,6 @@
                               <div class="col-3 text-center"><a class="sortable-link" href="#">Ответы<svg class="svg-sprite-icon icon-sort">
                                     <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
                                   </svg></a></div>
-                              <!--.col-2.text-centera(href='#' class='sortable-link')
-  | Тренд
-  +icon('sort')
--->
-                              <!--.col-2.text-centera(href='#' class='sortable-link')
-  | NPS
-  +icon('sort')-->
                               <div class="col-3 text-center"><a class="sortable-link" href="#">№<svg class="svg-sprite-icon icon-sort">
                                     <use xlink:href="img/sprite/symbol/sprite.svg#sort"></use>
                                   </svg></a></div>
@@ -280,19 +273,6 @@
                                   <p class="indicators__percent"><span class="indicators-percent is-up"><svg class="svg-sprite-icon icon-up-arrow"><use xlink:href="img/sprite/symbol/sprite.svg#up-arrow"></use></svg>24%</span></p>
                                 </div>
                               </div>
-                              <!--.col-2.indicators
-  .indicators__progress
-    .progress-chart
-      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Недовольны:<br>100 | 10%")
-      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Нейтральны:<br>100 | 30%")
-      .progress-chart__item(data-toggle="tooltip" data-html="true" data-placement="top" title="Довольны:<br>100 | 60%")
--->
-                              <!--.col-2.indicators
-  p.indicators__score 65
-  p.indicators__percent
-    span.indicators-percent.is-up
-      +icon('up-arrow')
-      | 24%-->
                               <div class="col-3">
                                 <div class="indicators">
                                   <p class="indicators__score">1</p>
@@ -337,17 +317,7 @@
       <footer class="page-footer" role="contentinfo"></footer>
     </div>
   </div>
-  <div class="modal fade" id="nps_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h5 class="modal-title w-100"><span>NPS™</span></h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body"><canvas id="nps_1"></canvas></div>
-      </div>
-    </div>
-  </div>
-  <div class="modal fade" id="resp_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal modal-chart fade" id="resp_1-chart-modal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header text-center">

@@ -9076,6 +9076,15 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 
+.page-datepicker .react-datepicker__tab-loop {
+  display: none;
+  position: absolute; }
+
+.page-datepicker .react-datepicker-popper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .page-datepicker input {
   width: 190px;
   padding: 8.5px 13px;
@@ -9104,15 +9113,6 @@ a.text-dark:hover, a.text-dark:focus {
       margin-right: 8px; }
       .page-datepicker .react-datepicker-wrapper:last-child {
         margin-right: 12px; } }
-
-.page-datepicker .react-datepicker__tab-loop {
-  display: none;
-  position: absolute; }
-
-.page-datepicker .react-datepicker-popper {
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 .page-datepicker .react-datepicker {
   -webkit-box-shadow: 0 30px 40px 0 #b2c4d5;
@@ -9574,6 +9574,7 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; } }
 
 .indicators__chart {
+  min-height: 75px;
   cursor: pointer; }
   @media (min-width: 992px) {
     .indicators__chart {

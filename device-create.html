@@ -115,16 +115,18 @@
                       <div class="page-form">
                         <div class="page-form__conatiner">
                           <form>
-                            <div class="form-group pb-4 mb-0 has-label-line"><label for="device-name">Назовите устройство:</label><input class="form-control" id="device-name" type="text" name="" required><span class="label-number">1</span></div>
-                            <div class="form-group pb-4 mb-0 has-label-line"><label for="device-id">ID номер</label><select class="form-control" id="device-id">
+                            <!-- use is-valid or is-invalid class for client-side form fields validation-->
+                            <!-- Добавить новое устройство/ редактировать - строка шаг 1 и 4-->
+                            <div class="form-group pb-4 mb-0 has-label-line"><label for="device-name"><span class="required-label">*</span>Назовите устройство:</label><input class="form-control is-valid" id="device-name" type="text" name="" required><span class="label-number">1</span></div>
+                            <div class="form-group pb-4 mb-0 has-label-line"><label for="device-id"><span class="required-label">*</span>ID номер</label><select class="form-control is-invalid" id="device-id" required>
                                 <option value="">-</option>
                                 <option value="">143543699</option>
                                 <option value="">175753539</option>
                                 <option value="">168674946</option>
                                 <option value="">143636546</option>
                               </select><span class="label-number">2</span></div>
-                            <div class="form-group pb-4 mb-0 has-label-line"><label for="device-type">Тип устройства:</label><input class="form-control" id="device-type" type="text" name="" required value="Терминал (напольный вариант)"><span class="label-number">3</span></div>
-                            <div class="form-group pb-4 mb-0"><label for="device-location">Укажите местоположение:</label><input class="form-control" id="device-location" type="text" name="" required><span class="label-number">4</span></div>
+                            <div class="form-group pb-4 mb-0 has-label-line"><span class="required-label">*</span>Тип устройства:<input class="form-control" id="device-type" type="text" name="" required value="Терминал (напольный вариант)" readonly><span class="label-number">3</span></div>
+                            <div class="form-group pb-4 mb-0"><label for="device-location"><span class="required-label">*</span>Укажите местоположение:</label><input class="form-control" id="device-location" type="text" name="" required><span class="label-number">4</span></div>
                             <div class="form-group has-submit-btn mb-0"><button class="btn btn-confirm has-icon">Создать<span class="icon-btn"><svg class="svg-sprite-icon icon-confirm"><use xlink:href="img/sprite/symbol/sprite.svg#confirm"></use></svg></span></button><button class="btn btn-cancel has-icon">Отмена<span class="icon-btn"><svg class="svg-sprite-icon icon-close"><use xlink:href="img/sprite/symbol/sprite.svg#close"></use></svg></span></button></div>
                           </form>
                         </div>

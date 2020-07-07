@@ -115,11 +115,12 @@
                       <div class="page-form">
                         <div class="page-form__conatiner">
                           <form>
-                            <div class="form-group pb-4 mb-0 has-label-line"><label for="report-name">Назовите отчет:</label><input class="form-control" id="report-name" type="text" name="" required><span class="label-number">1</span></div>
-                            <div class="form-group pb-4 mb-0 has-label-line"><label for="report-type">Выбирите:</label>
+                            <!-- use is-valid or is-invalid class for client-side form fields validation-->
+                            <div class="form-group pb-4 mb-0 has-label-line"><label for="report-name"><span class="required-label">*</span>Назовите отчет:</label><input class="form-control is-valid" id="report-name" type="text" name="" required><span class="label-number">1</span></div>
+                            <div class="form-group pb-4 mb-0 has-label-line"><label for="report-type"><span class="required-label">*</span>Выбирите:</label>
                               <div class="form-group-radio mb-3">
                                 <div class="custom-control custom-radio custom-control-inline"><input class="custom-control-input" id="poll" type="radio" name="type" checked><label class="custom-control-label" for="poll">опрос</label></div>
-                              </div><select class="form-control" id="report-type">
+                              </div><select class="form-control" id="report-type" required>
                                 <option>Терминал 0</option>
                                 <option>Терминал 1</option>
                                 <option>Терминал 2</option>
@@ -331,8 +332,9 @@
                             <div class="form-group pb-4 mb-0 has-label-line"><label for="periodicity">Частота отправки:</label><select class="form-control" id="periodicity">
                                 <option>Каждый день</option>
                               </select><span class="label-number">4</span></div>
-                            <div class="form-group pb-4 mb-0"><label for="send">Отправить отчет на почту:</label>
+                            <div class="form-group pb-4 mb-0"><label for="send"><span class="required-label">*</span>Отправить отчет на почту:</label>
                               <div class="select-input" id="send">
+                                <!-- required multiple select-->
                                 <ul class="select-input__list">
                                   <li class="select-input__item">abdulobdulov@mail.com<span class="select-input__close">+</span></li>
                                   <li class="select-input__item">abdulobdulov@mail.com<span class="select-input__close">+</span></li>

@@ -11189,6 +11189,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 20px; }
     @media (min-width: 1200px) {
       .main-page-footer .container {
+        max-width: 1240px;
         padding-top: 25px;
         padding-bottom: 25px;
         -webkit-box-orient: horizontal;

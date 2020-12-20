@@ -10,6 +10,8 @@
   <meta name="format-detection" content="email=no">
   <meta content="notranslate" name="google">
   <meta property="og:image" content="/img/og-image.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -212,6 +214,25 @@
         </div>
         <div class="modal-body">После этого вы не сможете его востановить</div>
         <div class="modal-footer"><button class="btn btn-modal-cancel" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-modal-confirm" type="button">Удалить</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal-help fade" id="modal-help" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header"><span class="modal-icon"><svg class="svg-sprite-icon icon-help"><use xlink:href="img/sprite/symbol/sprite.svg#help"></use></svg></span>
+          <h5 class="modal-title">Помощь</h5>
+          <h5 class="modal-title d-none">Спасибо за заявку!</h5>
+          <h5 class="modal-title d-none">Упс! Что-то пошло не так :(</h5><button class="close" type="button" data-dismiss="modal" aria-label="закрыть"><span aria-hidden="true"><svg class="svg-sprite-icon icon-plus"><use xlink:href="img/sprite/symbol/sprite.svg#plus"></use></svg></span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group"><label for="helpText">Наша команда здесь чтобы помочь разобраться.<br>Ответим на вопросы, пожелания и угрозы</label><textarea class="form-control" id="helpText" rows="6" placeholder="Введите свой вопрос" minlength="10" maxlength="250" required></textarea></div>
+          </form>
+          <p class="d-none">Наши менеджеры свяжутся с Вами для уточнения информации.</p>
+          <p class="d-none">Попробуйте отправить чуть форму посжее...</p>
+        </div>
+        <div class="modal-footer"><button class="btn btn-modal-cancel" type="button" data-dismiss="modal">Отмена</button><button class="btn btn-modal-confirm" type="submit">Отправить</button></div>
       </div>
     </div>
   </div>

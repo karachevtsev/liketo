@@ -30,12 +30,26 @@
 <body>
   <div class="page__inner">
     <div class="page-qr">
-      <div class="container">
-        <div class="page-qr__logo"><a href="https://liketo.me/" target="_blank"><img src="./img/qr-logo-base.png" alt="liketo.me"></a></div>
-        <div class="page-qr__rate">
-          <div class="page-qr__rate-message">Вам сьогодні сподобався наш сервіс?</div>
-          <div class="page-qr__rate-buttons"><button class="qr-btn qr-btn--bad">Плохо</button><button class="qr-btn qr-btn--neutral">Нейтрально</button><button class="qr-btn qr-btn--good">Отличноо</button></div>
-        </div>
+      <div class="container has-questions">
+        <h1 class="page-qr__question-name">Що саме сподобалось?</h1>
+        <form class="qr-question-form">
+          <div class="qr-question-form__questions">
+            <div class="qr-question-checkbox">
+              <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question1"><span class="qr-question-checkbox__name-text">Обслуговування персоналу</span></label></div>
+            </div>
+            <div class="qr-question-checkbox">
+              <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question2"><span class="qr-question-checkbox__name-text">Відсутність черги</span></label></div>
+            </div>
+            <div class="qr-question-checkbox">
+              <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question3"><span class="qr-question-checkbox__name-text">Чистота в приміщенні</span></label></div>
+            </div>
+            <div class="qr-question-checkbox">
+              <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question4"><span class="qr-question-checkbox__name-text">Профілактичні заходи від COVID</span></label></div>
+            </div>
+          </div>
+          <div class="qr-question-form__custom-answer"><textarea class="qr-question-custom-answer" placeholder="Написати свій варіант"></textarea></div>
+          <div class="qr-question-form__controls"><button class="btn qr-question-form__btn" type="submit">Відправити</button></div>
+        </form>
       </div>
       <div class="page-qr__footer">
         <p>Розроблено в <a href="https://liketo.me/" target="_blank">liketo.me</a></p>

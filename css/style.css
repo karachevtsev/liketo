@@ -11015,32 +11015,25 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   font-family: Montserrat, sans-serif;
   background: #fff; }
+  .page-qr .page-qr__rate-question, .page-qr .page-qr__question-name, .page-qr .page-qr__sended-title {
+    font-size: 25px;
+    font-weight: 700; }
   .page-qr .container {
-    padding-top: 7.5vh;
-    padding-bottom: 4.7vh;
+    padding: 7.5vh 20px;
     height: 100%; }
     .page-qr .container.has-questions {
       padding-top: 5.7vh; }
   .page-qr__logo {
     margin-bottom: 7.5vh;
     text-align: center; }
-  .page-qr__question-name {
-    margin: 0;
-    font-size: 23px;
-    color: #000000; }
   .page-qr__rate {
     max-width: 300px;
     margin: 0 auto; }
-  .page-qr__rate-message {
+  .page-qr__rate-question {
     position: relative;
     padding: 50px 40px;
-    font-size: 23px;
-    font-weight: bold;
     letter-spacing: 1.15px;
     line-height: 30px;
     text-align: center;
@@ -11048,7 +11041,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 10px;
     border: solid 7px #eaf3fa;
     background: #eaf3fa; }
-    .page-qr__rate-message:after {
+    .page-qr__rate-question:after {
       content: '';
       position: absolute;
       z-index: 1;
@@ -11059,7 +11052,7 @@ a.text-dark:hover, a.text-dark:focus {
       border-style: solid;
       border-width: 18px;
       border-color: #eaf3fa transparent transparent #eaf3fa; }
-    .page-qr__rate-message:before {
+    .page-qr__rate-question:before {
       content: '';
       position: absolute;
       z-index: 2;
@@ -11070,16 +11063,6 @@ a.text-dark:hover, a.text-dark:focus {
       border-style: solid;
       border-width: 18px;
       border-color: #eaf3fa transparent transparent #eaf3fa; }
-  .page-qr__rate-message-success {
-    min-height: 200px;
-    margin-top: 140px;
-    padding-top: 40px;
-    font-size: 23px;
-    font-weight: 500;
-    letter-spacing: 0.58px;
-    text-align: center;
-    color: #000000;
-    background: url(../img/qr-check.png) no-repeat top center; }
   .page-qr__rate-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11090,34 +11073,34 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 12vh 0 5.6vh; }
-  .page-qr .qr-btn {
-    font-size: 0;
-    display: block;
-    width: 98px;
-    height: 99px;
-    background: transparent;
-    background-image: url(../img/qr-sprite.png);
-    background-repeat: no-repeat;
-    border: none; }
-    .page-qr .qr-btn:active {
-      -webkit-transform: translateY(2px);
-              transform: translateY(2px); }
-    .page-qr .qr-btn:active, .page-qr .qr-btn:focus {
-      border: none;
-      outline: none; }
-    .page-qr .qr-btn--bad {
-      background-position: -5px -5px; }
-      .page-qr .qr-btn--bad:active {
-        background-position: -106px -5px; }
-    .page-qr .qr-btn--neutral {
-      background-position: -409px -5px; }
-      .page-qr .qr-btn--neutral:active {
-        background-position: -510px -5px; }
-    .page-qr .qr-btn--good {
-      background-position: -207px -5px; }
-      .page-qr .qr-btn--good:active {
-        background-position: -308px -5px; }
+    padding-top: 12vh; }
+    .page-qr__rate-buttons .qr-btn {
+      font-size: 0;
+      display: block;
+      width: 98px;
+      height: 99px;
+      background: transparent;
+      background-image: url(../img/qr-sprite.png);
+      background-repeat: no-repeat;
+      border: none; }
+      .page-qr__rate-buttons .qr-btn:active {
+        -webkit-transform: translateY(2px);
+                transform: translateY(2px); }
+      .page-qr__rate-buttons .qr-btn:active, .page-qr__rate-buttons .qr-btn:focus {
+        border: none;
+        outline: none; }
+      .page-qr__rate-buttons .qr-btn--bad {
+        background-position: -5px -5px; }
+        .page-qr__rate-buttons .qr-btn--bad:active {
+          background-position: -106px -5px; }
+      .page-qr__rate-buttons .qr-btn--neutral {
+        background-position: -409px -5px; }
+        .page-qr__rate-buttons .qr-btn--neutral:active {
+          background-position: -510px -5px; }
+      .page-qr__rate-buttons .qr-btn--good {
+        background-position: -207px -5px; }
+        .page-qr__rate-buttons .qr-btn--good:active {
+          background-position: -308px -5px; }
   .page-qr__footer {
     padding-bottom: 4.7vh; }
     .page-qr__footer p {
@@ -11125,26 +11108,25 @@ a.text-dark:hover, a.text-dark:focus {
       text-align: center;
       color: #b2c4d5; }
       .page-qr__footer p a {
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: underline;
         color: inherit; }
         .page-qr__footer p a:hover, .page-qr__footer p a:focus, .page-qr__footer p a:active {
           color: inherit;
           text-decoration: none; }
   .page-qr__question-name {
-    margin-bottom: 3.8vh; }
+    margin-bottom: 3.8vh;
+    color: #000000; }
   .page-qr__sended-img {
     display: block;
     margin: 0 auto 9.4vh; }
   .page-qr__sended-title {
     margin-bottom: 6.2vh;
-    font-size: 23px;
-    font-weight: bold;
     letter-spacing: 0.58px;
     color: #000000; }
   .page-qr__sended-subtitle {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.4px;
     color: #000000; }
@@ -11163,8 +11145,8 @@ a.text-dark:hover, a.text-dark:focus {
             box-shadow: 0 11px 20px 0 #c0c7d4;
     background: -webkit-gradient(linear, left top, right top, from(#ff790e), to(#f8b751));
     background: linear-gradient(to right, #ff790e, #f8b751);
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
     color: #ffffff; }
     .page-qr .qr-question-form__btn:hover, .page-qr .qr-question-form__btn:focus, .page-qr .qr-question-form__btn:active {
       -webkit-box-shadow: 0 11px 21px 0 #ebaeaa;
@@ -11173,7 +11155,7 @@ a.text-dark:hover, a.text-dark:focus {
       background-image: linear-gradient(to right, #e34905, #e89f36); }
   .page-qr .qr-question-checkbox {
     color: #010101;
-    font-size: 14px;
+    font-size: 18px;
     border-top: 1px solid #eaf3fb;
     border-bottom: 1px solid #eaf3fb; }
     .page-qr .qr-question-checkbox + .qr-question-checkbox {
@@ -11185,8 +11167,9 @@ a.text-dark:hover, a.text-dark:focus {
       display: inline-block;
       position: relative;
       margin: 0;
-      padding-left: 32px;
-      font-weight: 500; }
+      padding-left: 42px;
+      font-weight: 500;
+      line-height: 1.7; }
     .page-qr .qr-question-checkbox__input {
       position: absolute;
       top: .7em;
@@ -11206,20 +11189,20 @@ a.text-dark:hover, a.text-dark:focus {
       .page-qr .qr-question-checkbox__name-text:before {
         content: '';
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 0;
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border: solid 2px #d3dae5;
         background-color: #ffffff;
         border-radius: 50%; }
       .page-qr .qr-question-checkbox__name-text:after {
         content: '';
         position: absolute;
-        top: 5px;
-        left: 4px;
-        width: 12px;
-        height: 6px;
+        top: 6px;
+        left: 6px;
+        width: 17px;
+        height: 11px;
         opacity: 0;
         border-left: 2px solid #fff;
         border-bottom: 2px solid #fff;
@@ -11233,13 +11216,19 @@ a.text-dark:hover, a.text-dark:focus {
     min-height: 40px;
     padding: 14px 16px;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: #8b9eb0;
     background-color: #e9edf2;
     resize: none;
     border: none; }
     .page-qr .qr-question-custom-answer:focus {
+      background: #fff;
+      outline: 0;
+      -webkit-box-shadow: 0 0 0 2px #74ade6;
+              box-shadow: 0 0 0 2px #74ade6;
+      color: #000000; }
+    .page-qr .qr-question-custom-answer.is-active {
       background: #fff;
       outline: 0;
       -webkit-box-shadow: 0 0 0 2px #74ade6;

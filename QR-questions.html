@@ -42,12 +42,17 @@
             </div>
             <div class="qr-question-checkbox">
               <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question3"><span class="qr-question-checkbox__name-text">Чистота в приміщенні</span></label></div>
-            </div>
+            </div><!-- Логика работы елемента qr-question-custom-answer:-->
+            <!-- Если елемент имеет фокус, то добавляем класс has-feedback и убираем текст "Написати свій варіант"-->
+            <!-- Если юзер ввел текст, то добавляем класс has-feedback и в таком случае при потере фокуса, класс has-feedback не удаляется-->
+            <!-- Если юзер не ввел текст и елемент потерял фокус, то добавляем "Написати свій варіант" и удаляем класс has-feedback-->
             <div class="qr-question-checkbox">
               <div class="qr-question-checkbox__input-wrap"><label class="qr-question-checkbox__name"><input class="qr-question-checkbox__input" type="checkbox" name="question4"><span class="qr-question-checkbox__name-text">Профілактичні заходи від COVID</span></label></div>
             </div>
           </div>
-          <div class="qr-question-form__custom-answer"><textarea class="qr-question-custom-answer" placeholder="Написати свій варіант"></textarea></div>
+          <div class="qr-question-form__custom-answer">
+            <div class="qr-question-custom-answer" contenteditable="true">Написати свій варіант</div>
+          </div>
           <div class="qr-question-form__controls"><button class="btn qr-question-form__btn" type="submit">Відправити</button></div>
         </form>
       </div>

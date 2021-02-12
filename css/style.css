@@ -9946,6 +9946,7 @@ a.text-dark:hover, a.text-dark:focus {
     @media (min-width: 992px) {
       .rate__percent {
         margin-bottom: 1rem;
+        margin-right: 0;
         line-height: normal; } }
   .rate__responses {
     margin-left: auto; }

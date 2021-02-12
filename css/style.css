@@ -10169,6 +10169,9 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 0;
     border: none;
     background: transparent; }
+    @media (min-width: 768px) {
+      .comment__collapse-btn {
+        display: none; } }
     .comment__collapse-btn:focus {
       outline: none; }
     .comment__collapse-btn svg {
